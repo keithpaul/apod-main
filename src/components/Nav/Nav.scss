@@ -1,0 +1,39 @@
+.mainNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    .navLinks{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        a{
+            font-size: 26px;
+            text-decoration: none;
+            color: black;
+            position: relative;
+            &:before{
+                content: "";
+                display: block;
+                width: 0%;
+                height: 2px;
+                position: absolute;
+                background: black;
+                top: 60%;
+                left: 50%;
+                transition: all ease 0.3s;
+            }
+            &:hover{
+                &:before{
+                    width: 120%;
+                    left: -10%;
+                    transition: all ease 0.3s;
+                }               
+            }
+        }
+    }
+}
