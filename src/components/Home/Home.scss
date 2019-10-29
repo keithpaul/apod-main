@@ -317,14 +317,14 @@ body {
 @media screen and (max-width: 600px){
     .container {
         position: fixed;
-        top: 80%;
+        top: 70%;
         left: 40%;
         transform: translate(-50%, -10%);
         
     }
     .home{
         width: 100%;
-        height: calc(100vh - 200px);
+        height: calc(100vh - 300px);
         display: table;
         .homeContainer{
             display: table-cell;
