@@ -12,7 +12,7 @@ function AllImages() {
     var date1 = [Y,M,D].join('-');
     var date2 = '';
 
-    var D2 = D - 5;
+    var D2 = D - 7;
     var M2 = M;
     var Y2 = Y;
     //console.log(date1)
@@ -80,7 +80,7 @@ function AllImages() {
                 <div className="left">
                     <div className="imageContainer">
                         <div className="videoContainer">
-                            <iframe className="video" src="https://www.youtube.com/embed/AhWMOkrzKzs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe title={item.title} className="video" src={item.url} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>
